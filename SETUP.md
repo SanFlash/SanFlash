@@ -25,3 +25,25 @@ GitHub README content does not execute arbitrary JavaScript, React, or GSAP. SVG
 ## Content accuracy
 
 Project links point to public SanFlash repositories inspected during preparation. Statistics widgets are supplied by third-party services and may occasionally be rate-limited or unavailable. Language proportions are approximate. Do not treat them as manually verified metrics.
+
+
+## Interactive experience (GitHub Pages)
+
+The interactive site lives in `experience/` and is deployed by `.github/workflows/pages.yml`.
+
+- The workflow uses GitHub Pages Actions deployment and attempts to enable Pages automatically.
+- After the first push, open **Actions → Deploy SanFlash interactive experience** and inspect the deployment run.
+- If GitHub requires a one-time repository setting, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
+- After a successful deployment, the site URL is: https://sanflash.github.io/SanFlash/
+
+### Interactive features
+
+- Responsive navigation and dark / light theme toggle.
+- Live public GitHub profile counters (unauthenticated public API).
+- Project search and category filters.
+- Copy repository links to clipboard.
+- Technology tabs, command palette (`Ctrl/Cmd + K`), and keyboard dismissal.
+- Pointer tilt on project cards, animated particles, scroll reveals and GSAP enhancement.
+- Reduced-motion support and non-JavaScript fallback content.
+
+The page uses public project links and does not request or store GitHub credentials. Live profile counters depend on GitHub's unauthenticated API rate limits. GSAP is loaded from a CDN; core navigation and filtering do not depend on it.
