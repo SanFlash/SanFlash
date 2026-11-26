@@ -294,9 +294,9 @@ Playwright automation framework and practical automation exercises.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/SanFlash/SanFlash/output/github-contribution-grid-snake-dark.svg" alt="Animated GitHub contribution graph" width="100%">
+<a href="https://github.com/SanFlash/SanFlash/actions/workflows/snake.yml"><img src="https://raw.githubusercontent.com/SanFlash/SanFlash/output/github-contribution-grid-snake-dark.svg" alt="Animated GitHub contribution graph" width="100%"></a>
 
-<sub>If the animation is not visible yet, run the Generate contribution snake workflow from the Actions tab.</sub>
+<sub>If the animation is not visible yet, open <a href="https://github.com/SanFlash/SanFlash/actions/workflows/snake.yml">Generate contribution snake</a> and run the workflow once. The output branch is generated automatically after profile updates.</sub>
 
 </div>
 
