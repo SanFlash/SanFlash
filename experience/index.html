@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="Satyendra Kumar Namdeo — QA Automation Engineer, test engineering and AI-assisted development.">
+  <title>SanFlash — Engineering with intent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script defer src="https://unpkg.com/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SanFlash home"><span class="brand-mark">S<span>/</span>F</span><span>SANFLASH<small>ENGINEERING WITH INTENT</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Selected work</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-button" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">◐</button>
+      <button class="menu-button" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <a class="nav-cta" href="https://github.com/SanFlash" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO BUILDING WHAT MATTERS <span class="eyebrow-line"></span> IND / IN</div>
+        <p class="hero-kicker">HELLO, I'M</p>
+        <h1>Satyendra<br><span>Kumar Namdeo</span><i class="cursor">_</i></h1>
+        <div class="role-line"><span class="role-prefix">FOCUS //</span><span id="role-text">QA Automation Engineer</span></div>
+        <p class="hero-description">I turn complex user journeys into reliable software through test engineering, practical automation and thoughtful AI-assisted development.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span>↘</span></a>
+          <a class="button button-ghost" href="https://github.com/SanFlash" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><b>01</b> QUALITY FIRST</span><span><b>02</b> AUTOMATION ALWAYS</span><span><b>03</b> LEARN / SHIP / IMPROVE</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract animated orbital engineering illustration">
+        <div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><div class="core-inner">&lt;<span>/</span>&gt;</div><div class="core-ring"></div></div>
+        <span class="orbit-label label-a">TEST / VERIFY</span><span class="orbit-label label-b">BUILD / REFINE</span><span class="orbit-label label-c">AI / AUTOMATION</span>
+        <span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span><span class="art-cross cross-c">+</span>
+        <div class="art-index">FIG 001 <span>ENGINEERING SYSTEM</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>22°43' N / 75°51' E</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of focus"><div class="ticker-track"><span>QUALITY ENGINEERING ✳</span><span>PLAYWRIGHT AUTOMATION ✳</span><span>AI-ASSISTED TOOLS ✳</span><span>TEST ARCHITECTURE ✳</span><span>QUALITY ENGINEERING ✳</span><span>PLAYWRIGHT AUTOMATION ✳</span><span>AI-ASSISTED TOOLS ✳</span><span>TEST ARCHITECTURE ✳</span></div></section>
+
+    <section class="content-section section-shell" id="about">
+      <div class="section-heading"><p class="section-index">01 / PROFILE</p><h2>Curiosity into<br><em>confidence.</em></h2></div>
+      <div class="about-layout">
+        <p class="about-lead">Good software is not just shipped. It is <strong>understood, challenged, verified and improved.</strong></p>
+        <div class="about-body"><p>I'm a QA-focused engineer who enjoys exploring how products behave in the real world. My work sits at the intersection of functional testing, browser automation, API validation and developer tooling.</p><p>I care about clear reproduction steps, maintainable automation, meaningful test coverage and evidence that helps teams make better decisions.</p><div class="principles"><div><b>01</b><span>Understand the user journey before writing the test.</span></div><div><b>02</b><span>Prefer reliable, observable checks over brittle scripts.</span></div><div><b>03</b><span>Make every failure useful, reproducible and actionable.</span></div></div></div>
+      </div>
+      <div class="stats-strip" id="github-stats">
+        <div><strong data-stat="repos">—</strong><span>PUBLIC REPOSITORIES</span></div><div><strong data-stat="followers">—</strong><span>GITHUB FOLLOWERS</span></div><div><strong data-stat="following">—</strong><span>FOLLOWING</span></div><div><strong data-stat="joined">—</strong><span>ON GITHUB SINCE</span></div>
+        <p class="stats-note" id="stats-note">Fetching public GitHub profile data…</p>
+      </div>
+    </section>
+
+    <section class="content-section work-section section-shell" id="work">
+      <div class="section-heading"><p class="section-index">02 / SELECTED WORK</p><h2>Built to solve.<br><em>Made to evolve.</em></h2><p class="heading-note">A curated selection of experiments and engineering projects. Filter by area or search by name.</p></div>
+      <div class="project-toolbar"><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter-chip active" data-filter="all">All work <span>06</span></button><button class="filter-chip" data-filter="qa">QA & testing</button><button class="filter-chip" data-filter="ai">AI & tools</button><button class="filter-chip" data-filter="productivity">Productivity</button></div><label class="search-box"><span>⌕</span><input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects"></label></div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-category="qa" data-search="AI78QA AI QA testing Playwright automation">
+          <div class="project-visual visual-qa"><span class="visual-tag">01 / QUALITY SYSTEM</span><div class="visual-symbol">Q<span>A</span></div><div class="visual-lines"></div><span class="visual-foot">DISCOVER → TEST → REPORT</span></div>
+          <div class="project-info"><div class="project-meta"><span>QA AUTOMATION</span><span>01</span></div><h3>AI78QA</h3><p>AI-assisted QA platform concept for application discovery, test design, browser automation and evidence-led execution.</p><div class="tag-row"><span>Playwright</span><span>TypeScript</span><span>AI / QA</span></div><div class="card-actions"><a href="https://github.com/SanFlash/AI78QA" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/AI78QA" aria-label="Copy AI78QA link">Copy link</button></div></div>
+        </article>
+        <article class="project-card" data-category="qa" data-search="Record2POM recorder page object model browser automation">
+          <div class="project-visual visual-pom"><span class="visual-tag">02 / AUTOMATION STUDIO</span><div class="code-window"><b>page</b><span>.getByRole(</span><i>'button'</i><span>)</span><hr><b>await</b><span> page.click()</span><hr><b>expect</b><span>(result).toBeVisible()</span></div><span class="visual-foot">RECORD / STRUCTURE / REUSE</span></div>
+          <div class="project-info"><div class="project-meta"><span>TEST ARCHITECTURE</span><span>02</span></div><h3>Record2POM</h3><p>Browser recording and Page Object Model tooling to turn interactions into more reusable automation structures.</p><div class="tag-row"><span>Playwright</span><span>JavaScript</span><span>POM</span></div><div class="card-actions"><a href="https://github.com/SanFlash/record2pom" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/record2pom" aria-label="Copy Record2POM link">Copy link</button></div></div>
+        </article>
+        <article class="project-card" data-category="productivity" data-search="SatyTracker78 desktop helper browser extension workflow">
+          <div class="project-visual visual-tracker"><span class="visual-tag">03 / DESKTOP WORKFLOW</span><div class="tracker-ui"><div class="tracker-top"><i></i><i></i><i></i><span>SESSION MONITOR</span></div><div class="tracker-wave"></div><div class="tracker-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="visual-foot">BROWSER ↔ DESKTOP</span></div>
+          <div class="project-info"><div class="project-meta"><span>DEVELOPER TOOLING</span><span>03</span></div><h3>SatyTracker78</h3><p>Browser workflow toolkit exploring extension-to-desktop communication and companion diagnostics.</p><div class="tag-row"><span>Chrome APIs</span><span>TypeScript</span><span>Desktop</span></div><div class="card-actions"><a href="https://github.com/SanFlash/satyenstg1" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/satyenstg1" aria-label="Copy SatyTracker78 link">Copy link</button></div></div>
+        </article>
+        <article class="project-card" data-category="ai" data-search="SATYON AI multi source search research aggregation">
+          <div class="project-visual visual-search"><span class="visual-tag">04 / KNOWLEDGE ENGINE</span><div class="search-orbit"><i></i><i></i><i></i><b>AI</b></div><span class="visual-foot">MULTI-SOURCE DISCOVERY</span></div>
+          <div class="project-info"><div class="project-meta"><span>AI / RESEARCH</span><span>04</span></div><h3>SATYON-AI</h3><p>Multi-source search and research aggregation exploring a more connected information discovery workflow.</p><div class="tag-row"><span>Python</span><span>AI</span><span>Search</span></div><div class="card-actions"><a href="https://github.com/SanFlash/SATYON-AI" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/SATYON-AI" aria-label="Copy SATYON-AI link">Copy link</button></div></div>
+        </article>
+        <article class="project-card" data-category="ai" data-search="SatyOne AI productivity prompt workflow">
+          <div class="project-visual visual-one"><span class="visual-tag">05 / PRODUCTIVITY LAYER</span><div class="one-symbol">S<span>1</span></div><div class="one-orbit"></div><span class="visual-foot">THINK / ORGANISE / EXECUTE</span></div>
+          <div class="project-info"><div class="project-meta"><span>AI PRODUCTIVITY</span><span>05</span></div><h3>SatyOne</h3><p>AI productivity workspace concept focused on reusable prompt workflows and a unified working environment.</p><div class="tag-row"><span>React</span><span>TypeScript</span><span>AI tools</span></div><div class="card-actions"><a href="https://github.com/SanFlash/SatyOne" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/SatyOne" aria-label="Copy SatyOne link">Copy link</button></div></div>
+        </article>
+        <article class="project-card" data-category="qa" data-search="Automation Exercise Playwright framework testing">
+          <div class="project-visual visual-play"><span class="visual-tag">06 / TEST LAB</span><div class="play-checks"><span>✓</span><span>✓</span><span>✓</span><span>↗</span></div><div class="play-progress"><i></i></div><span class="visual-foot">ASSERT / VALIDATE / REPEAT</span></div>
+          <div class="project-info"><div class="project-meta"><span>BROWSER AUTOMATION</span><span>06</span></div><h3>Automation Exercise</h3><p>Playwright automation exercises and reusable patterns for practical browser testing workflows.</p><div class="tag-row"><span>Playwright</span><span>JavaScript</span><span>CI</span></div><div class="card-actions"><a href="https://github.com/SanFlash/automationExercise" target="_blank" rel="noreferrer">Explore repository ↗</a><button class="copy-link" data-copy="https://github.com/SanFlash/automationExercise" aria-label="Copy Automation Exercise link">Copy link</button></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No projects match that search. Try another keyword or filter.</p>
+      <div class="all-projects"><a class="button button-ghost" href="https://github.com/SanFlash?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories <span>↗</span></a></div>
+    </section>
+
+    <section class="content-section section-shell" id="stack">
+      <div class="section-heading"><p class="section-index">03 / TOOLKIT</p><h2>The tools are a means.<br><em>Quality is the goal.</em></h2></div>
+      <div class="stack-layout">
+        <div class="stack-intro"><p>My toolbox is centred around building, testing and improving software. Select a discipline to explore the tools I work with.</p><div class="stack-selector" role="tablist" aria-label="Technology categories"><button class="stack-tab active" role="tab" aria-selected="true" data-stack="quality">01 / Quality</button><button class="stack-tab" role="tab" aria-selected="false" data-stack="engineering">02 / Engineering</button><button class="stack-tab" role="tab" aria-selected="false" data-stack="delivery">03 / Delivery</button></div></div>
+        <div class="stack-panel" id="stack-panel" role="tabpanel"><p class="panel-label">SELECTED TOOLKIT</p><div class="stack-items"><span>Playwright</span><span>Selenium</span><span>Appium</span><span>Pytest</span><span>API Testing</span><span>Page Object Model</span></div><p class="stack-caption">Reliable checks, maintainable suites and clear test evidence.</p></div>
+      </div>
+    </section>
+
+    <section class="manifesto section-shell"><span class="manifesto-mark">“</span><p>Automation should not just make testing faster.<br><em>It should make confidence repeatable.</em></p><span class="manifesto-foot">SANFLASH / WORKING PRINCIPLE</span></section>
+
+    <section class="content-section contact-section section-shell" id="contact">
+      <div class="section-heading"><p class="section-index">04 / CONNECTION</p><h2>Let's build something<br><em>that works better.</em></h2></div>
+      <div class="contact-layout"><p>Interested in QA engineering, automation architecture, developer tooling or practical AI applications? Let's connect.</p><div class="contact-links"><a href="mailto:" id="email-link" data-email="hello@sanflash.dev">Email <span>↗</span></a><a href="https://www.linkedin.com/in/satyendra-namdeo/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/SanFlash" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+      <div class="contact-footer"><span>© <span id="year"></span> SANFLASH</span><span>DESIGNED FOR CURIOSITY. BUILT FOR CLARITY.</span><a href="#home">BACK TO TOP ↑</a></div>
+    </section>
+  </main>
+
+  <div class="command-overlay" id="command-overlay" aria-hidden="true">
+    <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="command-title">
+      <div class="command-head"><span id="command-title">QUICK NAVIGATION</span><kbd>ESC</kbd></div>
+      <input id="command-input" type="search" placeholder="Where do you want to go?" aria-label="Search navigation commands">
+      <div class="command-list">
+        <a href="#about" data-command="about profile introduction">↗ <span>About</span><small>01</small></a>
+        <a href="#work" data-command="work projects repositories">↗ <span>Selected work</span><small>02</small></a>
+        <a href="#stack" data-command="stack tools technology">↗ <span>Technology stack</span><small>03</small></a>
+        <a href="#contact" data-command="contact email linkedin">↗ <span>Contact</span><small>04</small></a>
+        <a href="https://github.com/SanFlash" target="_blank" rel="noreferrer" data-command="github repositories source code">↗ <span>GitHub profile</span><small>↗</small></a>
+      </div>
+      <div class="command-foot">TIP <span>Use Ctrl / ⌘ + K to open this panel</span></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">JavaScript is disabled. The project links and profile information remain available, but interactive filters and motion require JavaScript.</div></noscript>
+</body>
+</html>
