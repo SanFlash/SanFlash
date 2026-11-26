@@ -14,7 +14,7 @@ Building reliable software through thoughtful testing, practical automation, and
 
 <br>
 
-<a href="#-quick-navigation">Quick navigation ↓</a>
+<a href="https://sanflash.github.io/SanFlash/">OPEN INTERACTIVE EXPERIENCE ↗</a>　·　<a href="#-quick-navigation">Quick navigation ↓</a>
 
 </div>
 
