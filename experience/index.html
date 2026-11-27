@@ -15,12 +15,12 @@
   <script defer src="app.js"></script>
 </head>
 <body>
-  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div><div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div><canvas id="particle-field" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="SanFlash home"><span class="brand-mark">S<span>/</span>F</span><span>SANFLASH<small>ENGINEERING WITH INTENT</small></span></a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Selected work</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+      <a href="#visual-lab">Signal room</a><a href="#about">About</a><a href="#work">Selected work</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
       <button class="icon-button" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">◐</button>
@@ -54,6 +54,50 @@
     </section>
 
     <section class="ticker" aria-label="Areas of focus"><div class="ticker-track"><span>QUALITY ENGINEERING ✳</span><span>PLAYWRIGHT AUTOMATION ✳</span><span>AI-ASSISTED TOOLS ✳</span><span>TEST ARCHITECTURE ✳</span><span>QUALITY ENGINEERING ✳</span><span>PLAYWRIGHT AUTOMATION ✳</span><span>AI-ASSISTED TOOLS ✳</span><span>TEST ARCHITECTURE ✳</span></div></section>
+
+
+    <section class="visual-lab section-shell" id="visual-lab">
+      <div class="lab-heading">
+        <div><p class="section-index">00 / THE SIGNAL ROOM</p><h2>Ideas in motion.<br><em>Systems in sync.</em></h2></div>
+        <p class="lab-intro">A living visual map of how I think about engineering: observe the signal, connect the pieces, then make the system dependable.</p>
+      </div>
+      <div class="signal-board">
+        <article class="signal-card signal-orbit-card">
+          <div class="signal-card-top"><span>01 / SYSTEM MAP</span><span class="live-indicator">LIVE SIGNAL</span></div>
+          <div class="system-orbit" aria-label="Animated system map">
+            <div class="system-ring ring-a"></div><div class="system-ring ring-b"></div><div class="system-ring ring-c"></div>
+            <span class="orbit-node node-one">QA</span><span class="orbit-node node-two">AI</span><span class="orbit-node node-three">API</span><span class="orbit-node node-four">UX</span>
+            <div class="system-core"><b>S/F</b><small>CORE</small></div>
+          </div>
+          <div class="signal-card-bottom"><strong>Connected thinking</strong><span>People · Product · Process</span></div>
+        </article>
+        <article class="signal-card signal-wave-card">
+          <div class="signal-card-top"><span>02 / QUALITY PULSE</span><span>OBSERVE → VERIFY</span></div>
+          <div class="wave-stage">
+            <div class="wave-grid"></div>
+            <svg class="wave-svg" viewBox="0 0 520 180" role="img" aria-label="Animated quality signal waveform">
+              <defs><linearGradient id="waveStroke" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".55" stop-color="#67e8f9"/><stop offset="1" stop-color="#6ee7b7"/></linearGradient></defs>
+              <path class="wave-shadow" d="M0 92 C25 92 28 82 48 92 S78 116 96 92 S122 28 143 92 S172 142 193 92 S220 54 241 92 S268 128 289 92 S315 14 337 92 S365 156 385 92 S412 68 433 92 S466 102 520 92"/>
+              <path class="wave-line" d="M0 92 C25 92 28 82 48 92 S78 116 96 92 S122 28 143 92 S172 142 193 92 S220 54 241 92 S268 128 289 92 S315 14 337 92 S365 156 385 92 S412 68 433 92 S466 102 520 92"/>
+            </svg>
+            <span class="wave-readout">SIGNAL STABLE <b>99.8%</b></span>
+          </div>
+          <div class="signal-card-bottom"><strong>Find the anomaly.</strong><span>Trace it. Explain it. Fix it.</span></div>
+        </article>
+        <article class="signal-card signal-stack-card">
+          <div class="signal-card-top"><span>03 / ENGINEERING LAYERS</span><span>BUILD / SHIP</span></div>
+          <div class="stack-visual" aria-label="Layered engineering architecture graphic">
+            <div class="stack-beam beam-top"><i></i><b>EXPERIENCE</b><small>01</small></div>
+            <div class="stack-beam beam-mid"><i></i><b>INTELLIGENCE</b><small>02</small></div>
+            <div class="stack-beam beam-low"><i></i><b>AUTOMATION</b><small>03</small></div>
+            <div class="stack-beam beam-base"><i></i><b>FOUNDATION</b><small>04</small></div>
+            <div class="stack-axis"></div>
+          </div>
+          <div class="signal-card-bottom"><strong>Make complexity usable.</strong><span>From foundation to experience</span></div>
+        </article>
+      </div>
+      <div class="lab-footer"><span><i></i> VISUAL SYSTEM / 001</span><span>DESIGNED TO MOVE · BUILT TO RESPOND</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
 
     <section class="content-section section-shell" id="about">
       <div class="section-heading"><p class="section-index">01 / PROFILE</p><h2>Curiosity into<br><em>confidence.</em></h2></div>
