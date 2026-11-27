@@ -8,7 +8,7 @@
 
 Building reliable software through thoughtful testing, practical automation, and intelligent engineering.
 
-<a href="https://sanflash.github.io/SanFlash-SatyendraNamdeoPortfolio/"><img src="https://img.shields.io/badge/Explore%20Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Explore portfolio"></a>
+<a href="https://sanflash-interactive.vercel.app/"><img src="https://img.shields.io/badge/Explore%20Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Explore portfolio"></a>
 <a href="https://github.com/SanFlash?tab=repositories"><img src="https://img.shields.io/badge/Browse%20Repositories-111827?style=for-the-badge&logo=github&logoColor=white" alt="Browse repositories"></a>
 <a href="https://www.linkedin.com/in/satyendra-namdeo/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
 
@@ -320,7 +320,7 @@ Playwright automation framework and practical automation exercises.
 
 <a href="https://www.linkedin.com/in/satyendra-namdeo/"><img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="https://github.com/SanFlash"><img src="https://img.shields.io/badge/GitHub-Follow%20SanFlash-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="https://sanflash.github.io/SanFlash-SatyendraNamdeoPortfolio/"><img src="https://img.shields.io/badge/Portfolio-Explore%20my%20work-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://sanflash-interactive.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Explore%20my%20work-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
 
 <br><br>
 
