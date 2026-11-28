@@ -66,10 +66,10 @@
           <div class="signal-card-top"><span>01 / SYSTEM MAP</span><span class="live-indicator">LIVE SIGNAL</span></div>
           <div class="system-orbit" aria-label="Animated system map">
             <div class="system-ring ring-a"></div><div class="system-ring ring-b"></div><div class="system-ring ring-c"></div>
-            <span class="orbit-node node-one">QA</span><span class="orbit-node node-two">AI</span><span class="orbit-node node-three">API</span><span class="orbit-node node-four">UX</span>
+            <button class="orbit-node node-one" type="button" data-signal="qa" aria-label="Explore quality engineering">QA</button><button class="orbit-node node-two" type="button" data-signal="ai" aria-label="Explore AI and intelligence">AI</button><button class="orbit-node node-three" type="button" data-signal="api" aria-label="Explore API and integration">API</button><button class="orbit-node node-four" type="button" data-signal="ux" aria-label="Explore user experience">UX</button>
             <div class="system-core"><b>S/F</b><small>CORE</small></div>
           </div>
-          <div class="signal-card-bottom"><strong>Connected thinking</strong><span>People · Product · Process</span></div>
+          <div class="signal-card-bottom" aria-live="polite"><strong id="signal-title">Connected thinking</strong><span id="signal-description">Select a node to inspect the system</span></div>
         </article>
         <article class="signal-card signal-wave-card">
           <div class="signal-card-top"><span>02 / QUALITY PULSE</span><span>OBSERVE → VERIFY</span></div>
@@ -161,6 +161,15 @@
     </section>
   </main>
 
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <button class="dialog-close" id="project-dialog-close" type="button" aria-label="Close project details">×</button>
+    <p class="section-index">PROJECT / DEEP DIVE</p>
+    <p class="dialog-category" id="project-dialog-category"></p>
+    <h2 id="project-dialog-title"></h2>
+    <p id="project-dialog-description"></p>
+    <div class="tag-row" id="project-dialog-tags"></div>
+    <div class="dialog-actions"><a class="button button-primary" id="project-dialog-link" href="#" target="_blank" rel="noreferrer">Open repository ↗</a><button class="button button-ghost" id="project-dialog-copy" type="button">Copy repository link</button></div>
+  </dialog>
   <div class="command-overlay" id="command-overlay" aria-hidden="true">
     <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="command-title">
       <div class="command-head"><span id="command-title">QUICK NAVIGATION</span><kbd>ESC</kbd></div>
