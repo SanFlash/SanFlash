@@ -63,3 +63,34 @@ body.light .signal-card-bottom{background:linear-gradient(0deg,#f5f6fcdd,transpa
 @media(max-width:1000px){.signal-board{grid-template-columns:1fr 1fr}.signal-stack-card{grid-column:1/-1;min-height:340px}.stack-visual{inset:70px 18px 70px}.lab-heading{align-items:start}}
 @media(max-width:650px){.visual-lab{padding:75px 0 30px}.lab-heading{display:block;margin-bottom:25px}.lab-heading h2{font-size:40px;letter-spacing:-2px}.lab-intro{margin-top:18px}.signal-board{grid-template-columns:1fr;gap:12px}.signal-card,.signal-stack-card{grid-column:auto;min-height:350px}.system-orbit{width:250px;height:250px}.lab-footer{flex-wrap:wrap;font-size:7px}.lab-footer span:nth-child(2){display:none}.cursor-glow{display:none}}
 @media(prefers-reduced-motion:reduce){.hero-art:before,.hero-art:after,.system-ring,.orbit-node,.wave-line,.stack-beam,.signal-card:after{animation:none!important;transition:none!important}.scroll-progress{display:none}}
+
+
+/* ── ADVANCED INTERACTION LAYER ─────────────────────────────────────── */
+.orbit-node{appearance:none;padding:0;cursor:pointer;font-family:var(--mono);transition:scale .25s,border-color .25s,background .25s,box-shadow .25s}
+.orbit-node:hover,.orbit-node:focus-visible,.orbit-node.selected{scale:1.16;background:#20294a;border-color:#67e8f9;box-shadow:0 0 0 4px #67e8f91a,0 0 30px #67e8f977;outline:none}
+.orbit-node.selected{color:#fff;text-shadow:0 0 12px currentColor}
+.signal-card-bottom{z-index:3;min-height:78px}
+.signal-card-bottom strong{transition:color .25s}
+.signal-orbit-card:has(.orbit-node.selected) .signal-card-bottom strong{color:#67e8f9}
+.quick-view{border:1px solid #8b5cf655;background:#8b5cf611;color:var(--text);border-radius:4px;padding:8px 11px;font:8px var(--mono);letter-spacing:.4px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.quick-view:hover,.quick-view:focus-visible{background:#8b5cf633;border-color:#67e8f9;transform:translateY(-2px);outline:none}
+.project-dialog{width:min(560px,calc(100% - 30px));max-width:none;border:1px solid #8b5cf677;border-radius:16px;padding:clamp(25px,5vw,42px);color:var(--text);background:radial-gradient(ellipse at 90% 0%,#67e8f91c,transparent 42%),linear-gradient(145deg,#151b35,#080d1c);box-shadow:0 35px 120px #000b;position:fixed;margin:auto}
+.project-dialog[open]{animation:dialogEnter .28s cubic-bezier(.2,.8,.2,1)}
+.project-dialog::backdrop{background:#030611c9;backdrop-filter:blur(8px)}
+.project-dialog .section-index{font:9px var(--mono);letter-spacing:1.5px;color:#a78bfa}
+.project-dialog .dialog-category{font:9px var(--mono);letter-spacing:1.4px;color:#67e8f9;margin:30px 0 8px}
+.project-dialog h2{font-size:clamp(30px,6vw,46px);letter-spacing:-2px;margin:0 0 14px}
+.project-dialog>p:not(.section-index):not(.dialog-category){color:#aeb9d7;font-size:13px;line-height:1.9}
+.project-dialog .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.project-dialog .tag-row span{font:9px var(--mono);padding:8px 10px;border:1px solid #8b5cf644;border-radius:4px;color:#c4b5fd}
+.dialog-close{position:absolute;right:16px;top:12px;width:36px;height:36px;border:1px solid #ffffff22;border-radius:50%;background:#ffffff08;color:var(--text);font-size:24px;cursor:pointer}
+.dialog-close:hover{border-color:#67e8f9;color:#67e8f9}
+.dialog-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.dialog-actions .button{cursor:pointer}
+.hero-art{transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition:transform .25s ease-out}
+.project-card{transition:transform .22s ease-out}
+.project-card:focus-within{outline:1px solid #67e8f977;outline-offset:4px}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #67e8f9;outline-offset:4px}
+@keyframes dialogEnter{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:600px){.dialog-actions{display:grid}.dialog-actions .button{justify-content:center}.project-dialog{padding:26px 22px}.quick-view{padding:9px 8px}}
+@media(prefers-reduced-motion:reduce){.hero-art,.project-dialog[open]{animation:none!important;transition:none!important}.quick-view,.orbit-node{transition:none!important}}
